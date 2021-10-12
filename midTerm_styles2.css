@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+
+
+
+
+html {
+	height: auto;
+	margin: 0; padding: 0; border: 0;
+    background-image: url("sd_back2.png");
+}
+header {
+    text-align: center;
+    font-size: large;
+    padding-top: 10px;
+    background-color: rgb(11,11,121);
+    color: white;
+}
+
+body {
+	margin: 0px auto auto auto;
+	width: 80%;
+    height: 100%;
+	position: relative;
+	background-color: white;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+    background-color: rgb(51,151,151);
+}
+
+
+body > header nav {
+	display: block;
+	text-align: right;
+	width: 100%;
+	height: 28px;
+	background-color: #b5cc88;
+	border-bottom: 2px solid #0084bf;
+}
+
+body > header > nav ul li {
+	display: inline;
+	padding-right: 25px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #EFEFEF;
+}
+
+body > header > nav ul li a {
+	color: #EFEFEF;
+	text-decoration: none;
+	letter-spacing: 0.25em;
+}
+footer {
+    clear: both;
+    text-align: center;
+    vertical-align: bottom;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: 150px;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+    float: left;
+    margin: auto;
+}
+body > ul.hobbies {
+	margin: auto;
+	margin: 5px;
+	background: black;
+}
+
+ul.hobbies li {
+	border: 2px solid gray;
+    border-radius: 20px;
+    color: white;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 25px;
+    box-shadow: 10px 10px black;
+    background-image: radial-gradient(red, green, blue);
+	text-align: center;
+}
+body h1, body h2 {
+	text-align: center;
+}
+
+
+/* Flex Layout Styles */
+
+ /* ============================================
+	 Mobile Devices: 0 - 480 pixels
+	============================================
+ */
+ @media only screen and (max-width: 480px) {
+body {
+	width: 100%;
+}
+section > img {
+	-webkit-flex-display: flex;
+	display: flex;
+	margin: auto;
+}
+}
+header > nav.directory ul {
+	display: none;
+}
+ 
+ /* ===================================================
+	 Tablet and Desktop Devices: Greater than 480 pixels
+	===================================================
+ */
+ @media only screen and (min-width: 481px) {
+	nav ul {
+	   -webkit-flex-display: flex;
+	   display: flex;
+	   -webkit-flex-flow: row nowrap;
+	   flex-flow: row nowrap;
+	   height: 40px;
+	}
+	ul.horizontal li {
+	   -webkit-flex: 1 1 auto;
+	   flex: 1 1 auto;
+	}
+	img.size1 {
+	   width: 100%;
+	}
+	img.size2 {
+	   width: 60%;
+	}
+	img.size3 {
+	   width: 40%;
+	}
+	img.size4 {
+	   width: 30%;
+	}
+}

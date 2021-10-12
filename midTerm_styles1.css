@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+
+
+
+
+html {
+	height: auto;
+	margin: 0; padding: 0; border: 0;
+    background-image: url("sd_back2.png");
+}
+header {
+    text-align: center;
+    font-size: large;
+    padding-top: 10px;
+    background-color: rgb(11,11,121);
+    color: white;
+}
+
+body {
+	margin: 0px auto auto auto;
+	width: 80%;
+    height: 100%;
+	position: relative;
+	background-color: white;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+    background-color: rgb(51,151,151);
+}
+
+
+body > header nav {
+	display: block;
+	text-align: right;
+	width: 100%;
+	height: 28px;
+	background-color: #b5cc88;
+	border-bottom: 2px solid #0084bf;
+}
+
+body > header > nav ul li {
+	display: inline;
+	padding-right: 25px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #EFEFEF;
+}
+
+body > header > nav ul li a {
+	color: #EFEFEF;
+	text-decoration: none;
+	letter-spacing: 0.25em;
+}
+
+body > header > nav ul li a:visited {
+	color: #EFEFEF;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    vertical-align: bottom;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+body > section h1 {
+    text-align: center;
+
+}
+
+section#general {
+    margin: 5px;
+    color: white;
+    padding: 5px;
+    float: left;
+    width: 65%;
+}
+section#general p {
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px black;
+    background-image: radial-gradient(red, green, blue)
+
+}
+section#general p:nth-of-type(2) {
+    -webkit-flex-display: flex;
+    display: flex;
+}
+aside {
+    border: 2px solid gray;
+    border-radius: 20px;
+    color: white;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 25px;
+    box-shadow: 10px 10px black;
+    background-image: radial-gradient(red, green, blue)
+}
+
+section#general img {
+    display: block;
+    max-width: 100%;
+    height: 150px;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+}
+section#general figure {
+    display: block;
+    float: left;
+    margin: 5px;
+}
+section#general figcaption {
+    margin: 5px;
+}
+section#general figure::after {
+    clear: both;
+}
+
+ figure#figure2 {
+    transform: rotate(-40deg) scale(0.8, 0.8) translate(20px, -10px)
+                rotateZ(10deg) rotateY(10deg);
+    box-shadow: rgb(101,101,101) 10px 10px 25px;
+ }
